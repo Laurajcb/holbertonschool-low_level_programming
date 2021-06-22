@@ -10,18 +10,8 @@
 
 int _islower(int c)
 {
-	int r;
-
-if (c >= 65 && c <= 90)
-{
-	r = 0;
-}
-
-if (c >= 97 && c <= 122)
-{
-	r = 1;
-}
-
-
-return (r);
+if (c >= 'a' && c <= 'z')
+	return (1);
+else
+	return (0);
 }
