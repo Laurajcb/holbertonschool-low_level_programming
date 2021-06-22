@@ -2,7 +2,7 @@
 #include "holberton.h"
 
 /**
- * main - Prints the alphabet ten times, in lowercase, followed by a new line.
+ * print_alphabet_x10 -lowercase ten times.
  * Void always return: 0
  * Return: 0
  */
