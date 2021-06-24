@@ -27,5 +27,5 @@ if (n > 0)
 }
 else
 
-	_putchar('n');
+	_putchar('\n');
 }
