@@ -2,9 +2,9 @@
 #include "holberton.h"
 
 /**
- * int_isupper- function that checks for uppercase character.
+ * _isupper - function that checks for uppercase character.
  *@c: variable, number.
- *return: 1 if is uppercase othewise 0.
+ * Return: 1 if is uppercase othewise 0.
  **/
 
 int _isupper(int c)
