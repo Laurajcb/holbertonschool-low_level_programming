@@ -2,7 +2,7 @@
 #include "holberton.h"
 /**
  * print_triangle- prints a triangle, followed by a new line.
- *@size: size of triangle.
+ *@size: munber size of triangle.
  *
  * Return: void
  **/
