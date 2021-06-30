@@ -6,7 +6,7 @@
  *@dest: where did a copy
  *@src: the source string to cp
  *
- * Return: a pointer 
+ * Return: a pointer
  */
 
 char *_strcpy(char *dest, char *src)
@@ -16,13 +16,13 @@ char *_strcpy(char *dest, char *src)
 
 
 	while (*src)
-	{	
+	{
 		*dest = *src;
 		dest++;
 		src++;
 	}
 	*dest = '\0';
-	
+
 	return (a);
 
 }
