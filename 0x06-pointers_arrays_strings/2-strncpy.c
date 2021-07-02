@@ -2,7 +2,7 @@
 #include "holberton.h"
 
 /**
- * _strcat- funtion that cp a strings
+ * _strncpy- funtion that cp a strings
  *@dest: where copy
  *@src: the source string
  *@n: charaters form src
