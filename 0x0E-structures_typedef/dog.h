@@ -7,7 +7,7 @@
  * @owner: The owner of the dog.
  * Description :the attributes of a dog.
  */
-struct dog 
+struct dog
 
 {
 	char *name;
