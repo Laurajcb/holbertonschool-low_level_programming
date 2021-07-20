@@ -40,7 +40,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	{
 		cp1[i] = name[i];
 	}
-	for (j = 0; owner[i]; j++)
+	for (j = 0; owner[j]; j++)
 	{
 		cp2[j] = owner[j];
 	}
