@@ -3,7 +3,7 @@
 #include "lists.h"
 
 /**
- * list-len- elements of a list_t list.
+ * list_len- elements of a list_t list.
  * @h:head of my linked list
  *
  * Return: number of nodes
