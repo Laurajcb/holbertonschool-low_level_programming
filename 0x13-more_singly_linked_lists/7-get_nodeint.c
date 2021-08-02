@@ -7,8 +7,9 @@
  * get_nodeint_at_index- function that returns the nth
  *     node of a listint_t linked list
  * @head:head of my linked list
- * @index:the index of the node, starting at 0
- * Return: 0 if SLL is empty.
+ * @index:the index of the node to locate, starting at 0
+ * Return: if node does no exist NULL.
+ *	if exist  located node.
  **/
 
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
