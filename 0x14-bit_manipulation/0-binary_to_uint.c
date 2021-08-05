@@ -9,25 +9,19 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int con = 0, dec = 0;
+	unsigned int num;
 
-	if (b == NULL)
-	{
+	if (!b)
 		return (0);
-	}
 
-	while (b[con] != '\0')
+	for (num = 0; *b; b++)
 	{
-		if (b[con] != '0' && b[con] != '1')
-		{
+		if (*b == '1')
+			num = (num << 1) | 1;
+		else if (*b == '0')
+			num <<= 1;
+		else
 			return (0);
-		}
-		dec <<= 1;
-
-		if (b[con] == '1')
-			dec ^= 1;
-		con++;
 	}
-
-	return (dec);
+	return (num);
 }
