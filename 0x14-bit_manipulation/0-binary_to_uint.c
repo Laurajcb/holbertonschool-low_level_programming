@@ -9,38 +9,22 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int len = 0, count = 0, binary = 0;
+	unsigned int con = 0, dec = 0;
 
 	if (b == NULL)
 		return (0);
 
-	len = _strlen(b);
-	while (len--)
+	while (b[con] != '\0')
 	{
-		if (b[len] != 48 && b[len] != 49)
+		if (b[con] != '0' && b[con] != '1')
 			return (0);
 
-		if (b[len] == 49)
-			binary += 1 << count;
+		dec <<= 1;
 
-		count++;
+		if (b[con] == '1')
+			dec ^= 1;
+		con++;
 	}
 
-	return (binary);
-}
-
-/**
-  * _strlen - Returns the length of a string
-  * @s: String to count
-  *
-  * Return: the length a int
-  */
-int _strlen(const char *s)
-{
-	int c = 0;
-
-	while (s[c])
-		c++;
-
-	return (c);
+	return (dec);
 }
