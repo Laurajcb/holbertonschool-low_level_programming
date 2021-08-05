@@ -13,21 +13,22 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int num = 0;
 	unsigned int base = 1;
 
-
-	if (b == NULL)
-		return (0);
-
-	while (b[coun] != '\0')
+	if (b)
 	{
-		if (b[coun] != '0' && b[coun] != '1')
-			return (0);
-	}
-	coun--;
-	for (coun = 0; coun >= 0; coun--)
-	{
-		num += (b[coun] - '0') * base;
-		base = base * 2;
-	}
+		for (coun = 0; b[coun] != '\0'; coun++)
+		{
+			if (b[coun] != '1' && (b[coun] != '0'))
+			{
+				return (0);
+			}
+		}
 
+		coun--;
+		for (; coun >= 0; coun--)
+		{
+			num += (b[coun] - '0') * base;
+			base = base * 2;
+		}
+	}
 	return (num);
 }
