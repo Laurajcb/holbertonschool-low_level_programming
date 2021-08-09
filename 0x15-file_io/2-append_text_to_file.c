@@ -22,18 +22,17 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	if (text_content != NULL)
 	{
-		for (leng = 0; text_content[leng]; leng++)
+		while (text_content[leng])
 		{
+			leng++;
 		}
-
-		op = open(filename, O_WRONLY | O_APPEND);
-		wr = wirte(op, text_content, leng);
-
-		if (op == -1 || wr == -1)
-			return (-1);
-
-		close(op);
-
-		return (1);
 	}
+	op = open(filename, O_WRONLY | O_APPEND);
+	wr = write(op, text_content, leng);
+
+	if (op == -1 || wr == -1)
+		return (-1);
+
+	close(op);
+	return (1);
 }
