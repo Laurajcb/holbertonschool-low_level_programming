@@ -1,5 +1,5 @@
-#ifndef SEARCH
-#define SEARCH
+#ifndef BINARY_SEARCH
+#define BINARY_SEARCH
 
 #include <stdio.h>
 #include <stdlib.h>
